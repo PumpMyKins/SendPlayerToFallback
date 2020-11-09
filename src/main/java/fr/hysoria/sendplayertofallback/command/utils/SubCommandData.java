@@ -1,10 +1,9 @@
-package fr.hysoria.sendplayertofallback;
+package fr.hysoria.sendplayertofallback.command.utils;
 
 import java.util.List;
 
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
-import org.bukkit.command.CommandSender;
+import net.md_5.bungee.api.CommandSender;
+import net.md_5.bungee.api.plugin.Command;
 
 public class SubCommandData {
 
@@ -20,7 +19,6 @@ public class SubCommandData {
 	}
 	
 	public SubCommandData(String s, ISubCommand i) {
-		// TODO Auto-generated constructor stub
 		this.subCommand = s;
 		this.iSubCommand = i;
 	}
@@ -32,9 +30,9 @@ public class SubCommandData {
 		
 	}
 	
-	public boolean execute(CommandExecutor islandCommandExecutor, CommandSender sender , Command cmd , List<String> args) {
+	public void execute(Command islandCommandExecutor, CommandSender sender , List<String> args) {
 		
-		return this.iSubCommand.onSubCommand(islandCommandExecutor,sender, cmd, args);
+		this.iSubCommand.onSubCommand(islandCommandExecutor,sender, args);
 		
 	}
 
