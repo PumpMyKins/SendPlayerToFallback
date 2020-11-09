@@ -64,7 +64,6 @@ public class MainFallback extends Plugin {
 		FallbackCommandExecutor exec = new FallbackCommandExecutor(this);
 		exec.addSubCommand("help", new HelpSubCommand(this));
 		exec.addSubCommand("reload", "playertofallback.command.reload", new ReloadSubCommand(this));
-		exec.addSubCommand("send", "playertofallback.command.send", new SendSubCommand(this));
 		this.getProxy().getPluginManager().registerCommand(this, exec);
 		
 	}
