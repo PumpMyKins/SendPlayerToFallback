@@ -21,7 +21,7 @@ public class HelpSubCommand implements ISubCommand{
 	@Override
 	public void onSubCommand(Command exec, CommandSender sender, List<String> args) {
 
-		sender.sendMessage(new ComponentBuilder("PumpMyMotd[" + this.main.getDescription().getVersion() + "] commmand : \"pumpmymotd [help/reload/add/list/get]\"").color(ChatColor.AQUA).create());
+		sender.sendMessage(new ComponentBuilder("SendPlayerToFallback[" + this.main.getDescription().getVersion() + "] commmand : \"playertofallback [help/reload]\"").color(ChatColor.AQUA).create());
 
 	}
 
