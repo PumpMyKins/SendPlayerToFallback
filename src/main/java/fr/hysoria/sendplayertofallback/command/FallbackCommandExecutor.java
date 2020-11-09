@@ -142,13 +142,13 @@ public class FallbackCommandExecutor extends Command implements TabExecutor {
 
 			}
 
-		}else if(args.length == 2 & subCmdNameList.contains(args[0])) {			
+		}else if(args.length == 2 && subCmdNameList.contains(args[0])) {			
 
 			String subcommand = args[0];
 
 			for (SubCommandData subcmd : this.subCommandList) {
 
-				if(subcmd.getSubCommand().equalsIgnoreCase(subcommand) & subcmd.getSubCommandExecutor() instanceof ISubTabCompleter) {
+				if(subcmd.getSubCommand().equalsIgnoreCase(subcommand) && subcmd.getSubCommandExecutor() instanceof ISubTabCompleter) {
 
 					return ((ISubTabCompleter) subcmd.getSubCommandExecutor()).onTabComplete(this, sender, getArgs(args));
 
