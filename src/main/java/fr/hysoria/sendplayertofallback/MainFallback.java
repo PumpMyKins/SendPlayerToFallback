@@ -9,7 +9,6 @@ import fr.hysoria.sendplayertofallback.command.FallbackCommandExecutor;
 import fr.hysoria.sendplayertofallback.command.HelpSubCommand;
 import fr.hysoria.sendplayertofallback.command.LobbyCommand;
 import fr.hysoria.sendplayertofallback.command.ReloadSubCommand;
-import fr.hysoria.sendplayertofallback.command.SendSubCommand;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;

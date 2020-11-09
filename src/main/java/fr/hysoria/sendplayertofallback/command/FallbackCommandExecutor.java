@@ -27,7 +27,7 @@ public class FallbackCommandExecutor extends Command implements TabExecutor {
 
 	public FallbackCommandExecutor(MainFallback main) {
 		
-		this("pumpmybmotd");
+		this("playertofallback");
 		this.main = main;
 		
 	}
