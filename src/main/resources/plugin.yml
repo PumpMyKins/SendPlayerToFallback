@@ -1,9 +1,10 @@
-name: 'SendPlayerToFallback'
-main: fr.hysoria.sendplayertofallback.Main
-version: '1.0V'
-description: 'Send player to the callback server with a command'
-author: 'Clem_Fern'
-website: 'https://hysoria.eu/'
+name: SendPlayerToFallback
+main: fr.hysoria.sendplayertofallback.MainFallback
+version: 1.0.0
+description: Send player to the fallback server with a command
+author: Clem_Fern
 commands:
+ lobby:
+  description: command to go on the fallback server
  playertofallback:
-  description: "command to send player on the fallback server"
+  description: command to send player on the fallback server
