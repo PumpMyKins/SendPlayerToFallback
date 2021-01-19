@@ -1,2 +1,2 @@
 # SendPlayerToFallback
-Simple spigot command to send player on fallback server
+Simple bungeecord command to send player on fallback server
